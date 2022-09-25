@@ -1,0 +1,22 @@
+:root {
+  /* Background colors */
+  --main-background-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --accent-background-color: #2f303a;
+  --container-background-color: #eeeeee;
+  /* Text colors */
+  --main-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196f3;
+  --logo-color: #000000;
+  --address-color: rgba(255, 255, 255, 0.6);
+  --icons-color: #afb1b8;
+
+  /* Fonts */
+  --logo-font-family: Raleway, sans-serif;
+  --main-font-family: Roboto, sans-serif;
+
+  /* Others */
+  --header-line-color: #ececec;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

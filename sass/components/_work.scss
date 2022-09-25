@@ -1,0 +1,31 @@
+.work-section {
+  padding-bottom: 94px;
+}
+
+.work-section__container {
+  @extend .features-container;
+}
+
+.work-section__title {
+  @extend %title;
+}
+
+.work-section__thumb {
+  position: relative;
+}
+
+.work-section__name {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--main-background-color);
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+}

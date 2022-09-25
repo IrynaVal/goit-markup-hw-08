@@ -1,0 +1,14 @@
+%title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+%socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

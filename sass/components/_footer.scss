@@ -1,0 +1,101 @@
+.footer {
+  background-color: var(--accent-background-color);
+  padding: 60px 0;
+
+  &-container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &-contacts {
+    margin-right: 70px;
+  }
+}
+
+.address {
+  font-style: inherit;
+
+  &-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.address-link {
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--address-color);
+
+  transition: color var(--transition);
+
+  &:hover,
+  &:focus {
+    color: var(--main-background-color);
+  }
+}
+
+.city-link {
+  @extend .address-link;
+  color: var(--main-background-color);
+}
+
+.join {
+  margin-bottom: 20px;
+
+  color: var(--main-background-color);
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footer-sign {
+  margin-left: auto;
+}
+
+.footer-form {
+  display: flex;
+  gap: 17px;
+}
+
+.footer-form-input {
+  width: 358px;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline: transparent;
+
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: var(--address-color);
+  background-color: var(--accent-background-color);
+
+  transition: border-color var(--transition);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.footer-form-btn {
+  display: flex;
+  gap: 10px;
+  padding-left: 23px;
+  padding-right: 33px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: 200px;
+  align-items: center;
+  justify-content: center;
+
+  &-icon {
+    fill: currentColor;
+  }
+}
