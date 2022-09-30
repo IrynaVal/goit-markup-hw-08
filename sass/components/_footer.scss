@@ -3,20 +3,28 @@
   padding: 60px 0;
 
   &-container {
-    display: flex;
-    align-items: baseline;
+    // display: flex;
+    // align-items: baseline;
+
+    text-align: center;
   }
 
   &-contacts {
-    margin-right: 70px;
+    // margin-right: 70px;
   }
 }
 
 .address {
+  margin-bottom: 60px;
+
   font-style: inherit;
 
   &-item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 }
 
@@ -42,6 +50,10 @@
   color: var(--main-background-color);
 }
 
+.join-group {
+  margin-bottom: 60px;
+}
+
 .join {
   margin-bottom: 20px;
 
@@ -53,17 +65,19 @@
 }
 
 .footer-sign {
-  margin-left: auto;
+  // margin-left: auto;
 }
 
 .footer-form {
-  display: flex;
-  gap: 17px;
+  // display: flex;
+  // gap: 17px;
 }
 
 .footer-form-input {
-  width: 358px;
+  width: 450px;
+  // width: 358px;
   height: 50px;
+  margin-bottom: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -86,9 +100,11 @@
 
 .footer-form-btn {
   display: flex;
-  gap: 10px;
-  padding-left: 23px;
-  padding-right: 33px;
+  gap: 12px;
+
+  padding-left: 31px;
+  padding-right: 28px;
+
   padding-top: 10px;
   padding-bottom: 10px;
   min-width: 200px;
@@ -97,5 +113,11 @@
 
   &-icon {
     fill: currentColor;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 10px;
+    padding-left: 23px;
+    padding-right: 33px;
   }
 }

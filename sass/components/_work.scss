@@ -1,9 +1,15 @@
 .work-section {
   padding-bottom: 94px;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .work-section__container {
-  @extend .features-container;
+  display: flex;
+  gap: 30px;
 }
 
 .work-section__title {
