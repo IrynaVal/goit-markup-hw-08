@@ -30,7 +30,7 @@
   padding: 0;
 
   .socials-list__link {
-    @include socials(var(rgba(255, 255, 255, 0.1)), var(--main-background-colorr));
+    @include socials(rgba(255, 255, 255, 0.1), var(--main-background-color));
 
     transition: background-color var(--transition);
 

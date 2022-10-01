@@ -25,7 +25,7 @@
 
   <body>
     <!-- Шапка -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="nav">
           <a class="logo" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
@@ -54,16 +54,17 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
 
     <main>
-      <!--Секція Герой-->
-      <section class="hero">
+      <!-- Секція Герой-->
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="btn" type="button" data-modal-open>Замовити послугу</button> -->
-          <!-- Модальне вікно -->
-          <!-- <div class="backdrop is-hidden" data-modal>
+          <button class="btn" type="button" data-modal-open>Замовити послугу</button>        -->
+
+      <!-- Модальне вікно -->
+      <!-- <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button class="modal-btn" type="button" data-modal-close>
                 <svg class="modal-btn-icon" width="11" height="11">
@@ -71,7 +72,7 @@
                 </svg>
               </button>
               <!-- Форма замовлення -->
-              <!-- <form class="order-form" name="order-form">
+      <!-- <form class="order-form" name="order-form">
                 <strong class="order-form-title">Залиште свої дані, ми вам передзвонимо</strong>
 
                 <div class="order-form-group" role="group">
@@ -132,11 +133,10 @@
       </section> -->
 
       <!--Особливості-->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
-          <ul class="list features-container"> 
-            
+          <ul class="list features-container">
             <li class="feature-item">
               <div class="feature-image">
                 <svg width="70px" height="70px">
@@ -183,10 +183,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--Чим ми займаємося-->
-      <section class="work-section">
+      <!-- <section class="work-section">
         <div class="container">
           <h2 class="work-section__title">Чим ми займаємося</h2>
           <ul class="list work-section__container">
@@ -219,10 +219,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--Наша команда-->
-      <section class="section team">
+      <!-- <section class="section team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="list team__container">
@@ -482,10 +482,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Клієнти -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="clients-title">Постійні клієнти</h2>
           <ul class="list clients-list">
@@ -569,92 +569,94 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- Футер -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
-        <div class="footer-contacts">
-          <a class="logo logo-footer" href="./index.html"
-            ><span class="logo-accent">Web</span><span class="logo-white">Studio</span></a
-          >
-          <address class="address">
-            <ul class="list"> -->
-              <li class="address-item"
-                ><a
-                  class="city-link"
-                  href="https://goo.gl/maps/9S3XsaZNgQBBBoRa6"
+        <div class="footer-box">
+          <div class="footer-contacts">
+            <a class="logo logo-footer" href="./index.html"
+              ><span class="logo-accent">Web</span><span class="logo-white">Studio</span></a
+            >
+            <address class="address">
+              <ul class="list">
+                <li class="address-item">
+                  <a
+                    class="city-link"
+                    href="https://goo.gl/maps/9S3XsaZNgQBBBoRa6"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="address-item"
+                  ><a class="address-link" href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li class="address-item"
+                  ><a class="address-link" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join-group">
+            <p class="join">Приєднуйтесь</p>
+            <ul class="list socials-list footer-socials">
+              <li class="list socials-list__item">
+                <a
+                  class="socials-list__link"
+                  href="instagram.com"
                   target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >Київ, пр-т Лесі Українки, 26</a
-                ></li
-              >
-              <li class="address-item"
-                ><a class="address-link" href="mailto:info@example.com">info@example.com</a>
+                  rel="noopener noreferrer"
+                  aria-label="instagram"
+                >
+                  <svg class="socials-list__icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address-item"
-                ><a class="address-link" href="tel:+380991111111">+38 099 111 11 11</a>
+              <li class="list socials-list__item">
+                <a
+                  class="socials-list__link"
+                  href="twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="twitter"
+                >
+                  <svg class="socials-list__icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list socials-list__item">
+                <a
+                  class="socials-list__link"
+                  href="facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="facebook"
+                >
+                  <svg class="socials-list__icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list socials-list__item">
+                <a
+                  class="socials-list__link"
+                  href="linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="linkedin"
+                >
+                  <svg class="socials-list__icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="join-group">
-          <p class="join">Приєднуйтесь</p>
-          <ul class="list socials-list footer-socials">
-            <li class="list socials-list__item">
-              <a
-                class="socials-list__link"
-                href="instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="instagram"
-              >
-                <svg class="socials-list__icon" width="20px" height="20px">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="list socials-list__item">
-              <a
-                class="socials-list__link"
-                href="twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="twitter"
-              >
-                <svg class="socials-list__icon" width="20px" height="20px">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="list socials-list__item">
-              <a
-                class="socials-list__link"
-                href="facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="facebook"
-              >
-                <svg class="socials-list__icon" width="20px" height="20px">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="list socials-list__item">
-              <a
-                class="socials-list__link"
-                href="linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="linkedin"
-              >
-                <svg class="socials-list__icon" width="20px" height="20px">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="footer-sign">
           <p class="join">Підпишіться на розсилку</p>
@@ -667,9 +669,9 @@
                 placeholder="E-mail"
               />
             </label>
-            <button class="btn footer-form-btn-icon" type="submit"
+            <button class="btn footer-form-btn" type="submit"
               >Підписатися
-              <svg class="footer-btn-icon" width="24" height="24">
+              <svg class="footer-form-btn-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
@@ -677,6 +679,7 @@
         </div>
       </div>
     </footer> -->
-    <script src="./js/modal.js"></script> -->
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

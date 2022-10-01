@@ -2,15 +2,29 @@
   background-color: var(--accent-background-color);
   padding: 60px 0;
 
-  &-container {
-    // display: flex;
-    // align-items: baseline;
-
-    text-align: center;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 60px 89px 60px 76px;
   }
 
-  &-contacts {
-    // margin-right: 70px;
+  &-container {
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .footer-box {
+    display: flex;
+    gap: 165px;
+    align-items: baseline;
+
+    @media screen and (min-width: 1200px) {
+      gap: 70px;
+    }
   }
 }
 
@@ -65,19 +79,28 @@
 }
 
 .footer-sign {
-  // margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 
 .footer-form {
-  // display: flex;
-  // gap: 17px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 17px;
+  }
 }
 
 .footer-form-input {
-  width: 450px;
-  // width: 358px;
-  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
+
+  // max-width: 450px;
+  width: 450px;
+  height: 50px;
+
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -96,20 +119,20 @@
   &:focus {
     border-color: var(--accent-color);
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .footer-form-btn {
   display: flex;
   gap: 12px;
-
   padding-left: 31px;
   padding-right: 28px;
-
-  padding-top: 10px;
-  padding-bottom: 10px;
   min-width: 200px;
-  align-items: center;
-  justify-content: center;
+  height: 50px;
+  margin: 0 auto;
 
   &-icon {
     fill: currentColor;
@@ -117,7 +140,6 @@
 
   @media screen and (min-width: 1200px) {
     gap: 10px;
-    padding-left: 23px;
-    padding-right: 33px;
+    padding-left: 28px;
   }
 }
