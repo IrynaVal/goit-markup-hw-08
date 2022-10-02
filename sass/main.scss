@@ -1,10 +1,12 @@
 @import 'utils/variables';
+@import 'utils/breakpoints';
 @import 'utils/placeholders';
 @import 'utils/mixin';
 @import 'base/general';
 @import 'base/resets';
 @import 'components/logo';
 @import 'components/header';
+@import 'components/menu';
 @import 'components/hero';
 @import 'components/btn';
 @import 'components/modal';

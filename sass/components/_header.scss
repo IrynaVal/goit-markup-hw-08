@@ -58,6 +58,17 @@
   gap: 50px;
   margin-left: auto;
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    margin-left: auto;
+  }
+
+  &__item:not(:last-child) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 10px;
+    }
+  }
+
   &__link {
     display: flex;
     align-items: center;
@@ -75,6 +86,10 @@
     text-decoration: none;
 
     transition: color var(--transition);
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding: 0;
+    }
   }
 
   &__link:hover,
@@ -84,5 +99,18 @@
 
   &__icon {
     fill: currentColor;
+  }
+}
+
+.header-group {
+}
+
+.header-group {
+  display: none;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-grow: 1;
   }
 }
