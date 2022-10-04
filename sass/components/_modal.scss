@@ -8,28 +8,41 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity var(--transition), visibility var(--transition);
+
+  padding: 93px 15px 94px 15px;
+  overflow-y: scroll;
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  min-height: 609px;
+  width: 100%;
 
-  min-height: 581px;
-  width: 528px;
   background-color: var(--main-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
   transition: transform var(--transition);
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-height: 581px;
+    width: 528px;
+  }
 }
 
 .modal-btn {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 101px;
+
+  right: 23px;
 
   display: flex;
   width: 30px;
@@ -44,6 +57,11 @@
   color: #000000;
 
   transition: color var(--transition), border-color var(--transition);
+
+  @media screen and (min-width: 768px) {
+    top: 8px;
+    right: 8px;
+  }
 
   &-icon {
     fill: currentColor;
@@ -77,7 +95,8 @@
     margin-bottom: 12px;
 
     font-size: 20px;
-    line-height: calc(23 / 20);
+    line-height: calc(30 / 20);
+    // line-height: calc(23 / 20);
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
   }
@@ -200,8 +219,14 @@ textarea::placeholder {
 }
 
 .order-form-desc {
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   user-select: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }
 
 .order-form-link {

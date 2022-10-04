@@ -149,8 +149,8 @@
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button class="btn" type="button" data-modal-open>Замовити послугу</button>
 
-      <!-- Модальне вікно -->
-      <!-- <div class="backdrop is-hidden" data-modal>
+          <!-- Модальне вікно -->
+          <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button class="modal-btn" type="button" data-modal-close>
                 <svg class="modal-btn-icon" width="11" height="11">
@@ -158,7 +158,7 @@
                 </svg>
               </button>
               <!-- Форма замовлення -->
-      <!-- <form class="order-form" name="order-form">
+              <form class="order-form" name="order-form">
                 <strong class="order-form-title">Залиште свої дані, ми вам передзвонимо</strong>
 
                 <div class="order-form-group" role="group">
@@ -216,7 +216,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!--Особливості-->
       <section class="section">
@@ -278,7 +278,8 @@
           <ul class="list work-section__container">
             <li class="work-section__thumb">
               <img
-                src="./images/box-1.jpg"
+                srcset="./images/work/img_dt-@1x.jpg 1x, ./images/work/img_dt-@2x.jpg 2x"
+                src="./images/work/img_dt-@1x.jpg"
                 alt="процес розробки десктопного додатку"
                 width="370"
                 height="294"
@@ -287,7 +288,8 @@
             </li>
             <li class="work-section__thumb">
               <img
-                src="./images/box-2.jpg"
+                srcset="./images/work/img_dt2-@1x.jpg 1x, ./images/work/img_dt2-@2x.jpg 2x"
+                src="./images/work/img_dt2-@1x.jpg"
                 alt="процес розробки мобільного додатку"
                 width="370"
                 height="294"
@@ -296,7 +298,8 @@
             </li>
             <li class="work-section__thumb">
               <img
-                src="./images/box-3.jpg"
+                srcset="./images/work/img_dt3-@1x.jpg 1x, ./images/work/img_dt3-@2x.jpg 2x"
+                src="./images/work/img_dt3-@1x.jpg"
                 alt="процес підбору палітри кольорів"
                 width="370"
                 height="294"
@@ -313,7 +316,40 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="list team__container">
             <li class="team__list">
-              <img src="./images/img-1.jpg" alt="фото продакт-дизайнера" width="270" height="260" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img_dt-@1x.webp 1x, ./images/team/img_dt-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img_dt-@1x.jpg 1x, ./images/team/img_dt-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img_tab-@1x.webp 1x, ./images/team/img_tab-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img_tab-@1x.jpg 1x, ./images/team/img_tab-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img_mob-@1x.webp 1x, ./images/team/img_mob-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img_mob-@1x.jpg 1x, ./images/team/img_mob-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img " src="./images/team/img_mob-@1x.jpg" alt="фото продакт-дизайнера" />
+              </picture>
+
               <div class="team__data">
                 <h3 class="team__member">Ігор Дем'яненко</h3>
                 <p class="team__text" lang="en">Product Designer</p>
@@ -374,12 +410,39 @@
               </ul>
             </li>
             <li class="team__list">
-              <img
-                src="./images/img-2.jpg"
-                alt="фото фронтенд-розробниці"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img_dt2-@1x.webp 1x, ./images/team/img_dt2-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img_dt2-@1x.jpg 1x, ./images/team/img_dt2-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img_tab2-@1x.webp 1x, ./images/team/img_tab2-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img_tab2-@1x.jpg 1x, ./images/team/img_tab2-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img_mob2-@1x.webp 1x, ./images/team/img_mob2-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img_mob2-@1x.jpg 1x, ./images/team/img_mob2-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img src="./images/team/img_mob2-@1x.jpg" alt="фото фронтенд-розробниці" />
+              </picture>
               <div class="team__data">
                 <h3 class="team__member">Ольга Рєпіна</h3>
                 <p class="team__text" lang="en">Frontend Developer</p>
@@ -440,12 +503,39 @@
               </ul>
             </li>
             <li class="team__list">
-              <img
-                src="./images/img-3.jpg"
-                alt="фото спеціаліста з маркетингу"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img_dt3-@1x.webp 1x, ./images/team/img_dt3-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img_dt3-@1x.jpg 1x, ./images/team/img_dt3-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img_tab3-@1x.webp 1x, ./images/team/img_tab3-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img_tab3-@1x.jpg 1x, ./images/team/img_tab3-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img_mob3-@1x.webp 1x, ./images/team/img_mob3-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img_mob3-@1x.jpg 1x, ./images/team/img_mob3-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img src="./images/team/img_mob3-@1x.jpg" alt="фото спеціаліста з маркетингу" />
+              </picture>
               <div class="team__data">
                 <h3 class="team__member">Микола Тарасов</h3>
                 <p class="team__text" lang="en">Marketing</p>
@@ -506,7 +596,39 @@
               </ul>
             </li>
             <li class="team__list">
-              <img src="./images/img-4.jpg" alt="фото ЮАй дизайнера" width="270" height="260" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img_dt4-@1x.webp 1x, ./images/team/img_dt4-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img_dt4-@1x.jpg 1x, ./images/team/img_dt4-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img_tab4-@1x.webp 1x, ./images/team/img_tab4-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img_tab4-@1x.jpg 1x, ./images/team/img_tab4-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img_mob4-@1x.webp 1x, ./images/team/img_mob4-@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img_mob4-@1x.jpg 1x, ./images/team/img_mob4-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img src="./images/team/img_mob4-@1x.jpg" alt="фото ЮАй дизайнера" />
+              </picture>
               <div class="team__data">
                 <h3 class="team__member">Михайло Єрмаков</h3>
                 <p class="team__text" lang="en">UI Designer</p>

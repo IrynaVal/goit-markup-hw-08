@@ -16,7 +16,7 @@
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .footer-box {
     display: flex;
     gap: 165px;
@@ -119,8 +119,13 @@
     border-color: var(--accent-color);
   }
 
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
   @media screen and (min-width: 1200px) {
     width: 358px;
+    margin-bottom: 0;
   }
 }
 

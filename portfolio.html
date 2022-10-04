@@ -25,7 +25,7 @@
 
   <body>
     <!-- Шапка -->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header__container">
         <nav class="nav">
           <a class="logo" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
@@ -54,7 +54,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <!-- Наші проєкти -->
@@ -62,22 +62,80 @@
         <div class="container">
           <h1 class="visually-hidden">Наші проєкти</h1>
           <ul class="list filter-list">
-            <li><button class="btn-filter current" type="button">Усі</button></li>
-            <li><button class="btn-filter" type="button">Веб-сайти</button></li>
-            <li><button class="btn-filter" type="button">Додатки</button></li>
-            <li><button class="btn-filter" type="button">Дизайн</button></li>
-            <li><button class="btn-filter" type="button">Маркетинг</button></li>
+            <li class="filter-list-item"
+              ><button class="btn-filter current" type="button">Усі</button></li
+            >
+            <li class="filter-list-item"
+              ><button class="btn-filter" type="button">Веб-сайти</button></li
+            >
+            <li class="filter-list-item"
+              ><button class="btn-filter" type="button">Додатки</button></li
+            >
+            <li class="filter-list-item"
+              ><button class="btn-filter" type="button">Дизайн</button></li
+            >
+            <li class="filter-list-item"
+              ><button class="btn-filter" type="button">Маркетинг</button></li
+            >
           </ul>
           <ul class="list projects-container">
             <li class="projects-item">
               <a class="projects-link" href="">
                 <div class="projects-thumb">
-                  <img
-                    src="./images/portfolio-img-1.jpg"
-                    alt="Cайт, на якому розміщено фото трьох співробітників"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_dt-@1x.webp 1x,
+                        ./images/portfolio/img_dt-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_dt-@1x.jpg 1x,
+                        ./images/portfolio/img_dt-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_tab-@1x.webp 1x,
+                        ./images/portfolio/img_tab-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_tab-@1x.jpg 1x,
+                        ./images/portfolio/img_tab-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_mob-@1x.webp 1x,
+                        ./images/portfolio/img_mob-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_mob-@1x.jpg 1x,
+                        ./images/portfolio/img_mob-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/img_mob-@1x.jpg"
+                      alt="Cайт, на якому розміщено фото трьох співробітників"
+                    />
+                  </picture>
                   <p class="projects-overlay"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -94,12 +152,60 @@
             <li class="projects-item">
               <a class="projects-link" href="">
                 <div class="projects-thumb">
-                  <img
-                    src="./images/portfolio-img-2.jpg"
-                    alt="Постер з двома волейболистами під час гри"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_dt2-@1x.webp 1x,
+                        ./images/portfolio/img_dt2-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_dt2-@1x.jpg 1x,
+                        ./images/portfolio/img_dt2-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_tab2-@1x.webp 1x,
+                        ./images/portfolio/img_tab2-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_tab2-@1x.jpg 1x,
+                        ./images/portfolio/img_tab2-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_mob2-@1x.webp 1x,
+                        ./images/portfolio/img_mob2-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_mob2-@1x.jpg 1x,
+                        ./images/portfolio/img_mob2-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/img_mob2-@1x.jpg"
+                      alt="Постер з двома волейболистами під час гри"
+                    />
+                  </picture>
                   <p class="projects-overlay"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -117,12 +223,60 @@
             <li class="projects-item">
               <a class="projects-link" href="">
                 <div class="projects-thumb">
-                  <img
-                    src="./images/portfolio-img-3.jpg"
-                    alt="Емблема ресторану морської кухні"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_dt3-@1x.webp 1x,
+                        ./images/portfolio/img_dt3-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_dt3-@1x.jpg 1x,
+                        ./images/portfolio/img_dt3-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_tab3-@1x.webp 1x,
+                        ./images/portfolio/img_tab3-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_tab3-@1x.jpg 1x,
+                        ./images/portfolio/img_tab3-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_mob3-@1x.webp 1x,
+                        ./images/portfolio/img_mob3-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_mob3-@1x.jpg 1x,
+                        ./images/portfolio/img_mob3-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/img_mob3-@1x.jpg"
+                      alt="Емблема ресторану морської кухні"
+                    />
+                  </picture>
                   <p class="projects-overlay"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -138,12 +292,57 @@
             <li class="projects-item">
               <a class="projects-link" href="">
                 <div class="projects-thumb">
-                  <img
-                    src="./images/portfolio-img-4.jpg"
-                    alt="Чорні накладні навушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_dt4-@1x.webp 1x,
+                        ./images/portfolio/img_dt4-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_dt4-@1x.jpg 1x,
+                        ./images/portfolio/img_dt4-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_tab4-@1x.webp 1x,
+                        ./images/portfolio/img_tab4-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_tab4-@1x.jpg 1x,
+                        ./images/portfolio/img_tab4-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_mob4-@1x.webp 1x,
+                        ./images/portfolio/img_mob4-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_mob4-@1x.jpg 1x,
+                        ./images/portfolio/img_mob4-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img src="./images/portfolio/img_mob4-@1x.jpg" alt="Чорні накладні навушники" />
+                  </picture>
                   <p class="projects-overlay"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -159,12 +358,60 @@
             <li class="projects-item">
               <a class="projects-link" href="">
                 <div class="projects-thumb">
-                  <img
-                    src="./images/portfolio-img-5.jpg"
-                    alt="Дві картонні коробки білого і світло-коричневого кольору різного розміру і з різними написами"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_dt5-@1x.webp 1x,
+                        ./images/portfolio/img_dt5-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_dt5-@1x.jpg 1x,
+                        ./images/portfolio/img_dt5-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_tab5-@1x.webp 1x,
+                        ./images/portfolio/img_tab5-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_tab5-@1x.jpg 1x,
+                        ./images/portfolio/img_tab5-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_mob5-@1x.webp 1x,
+                        ./images/portfolio/img_mob5-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_mob5-@1x.jpg 1x,
+                        ./images/portfolio/img_mob5-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/img_mob5-@1x.jpg"
+                      alt="Дві картонні коробки білого і світло-коричневого кольору різного розміру і з різними написами"
+                    />
+                  </picture>
                   <p class="projects-overlay"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -180,12 +427,60 @@
             <li class="projects-item">
               <a class="projects-link" href="">
                 <div class="projects-thumb">
-                  <img
-                    src="./images/portfolio-img-6.jpg"
-                    alt="Монітор із відкритим веб-сайтом"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_dt6-@1x.webp 1x,
+                        ./images/portfolio/img_dt6-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_dt6-@1x.jpg 1x,
+                        ./images/portfolio/img_dt6-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_tab6-@1x.webp 1x,
+                        ./images/portfolio/img_tab6-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_tab6-@1x.jpg 1x,
+                        ./images/portfolio/img_tab6-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_mob6-@1x.webp 1x,
+                        ./images/portfolio/img_mob6-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_mob6-@1x.jpg 1x,
+                        ./images/portfolio/img_mob6-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/img_mob6-@1x.jpg"
+                      alt="Монітор із відкритим веб-сайтом"
+                    />
+                  </picture>
                   <p class="projects-overlay"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -201,12 +496,60 @@
             <li class="projects-item">
               <a class="projects-link" href="">
                 <div class="projects-thumb">
-                  <img
-                    src="./images/portfolio-img-7.jpg"
-                    alt="Розгорнута брошура з фото і текстом"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_dt7-@1x.webp 1x,
+                        ./images/portfolio/img_dt7-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_dt7-@1x.jpg 1x,
+                        ./images/portfolio/img_dt7-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_tab7-@1x.webp 1x,
+                        ./images/portfolio/img_tab7-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_tab7-@1x.jpg 1x,
+                        ./images/portfolio/img_tab7-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_mob7-@1x.webp 1x,
+                        ./images/portfolio/img_mob7-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_mob7-@1x.jpg 1x,
+                        ./images/portfolio/img_mob7-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/img_mob7-@1x.jpg"
+                      alt="Розгорнута брошура з фото і текстом"
+                    />
+                  </picture>
                   <p class="projects-overlay"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -222,12 +565,60 @@
             <li class="projects-item">
               <a class="projects-link" href="">
                 <div class="projects-thumb">
-                  <img
-                    src="./images/portfolio-img-8.jpg"
-                    alt="Біла лейба з назвою компанії"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_dt8-@1x.webp 1x,
+                        ./images/portfolio/img_dt8-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_dt8-@1x.jpg 1x,
+                        ./images/portfolio/img_dt8-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_tab8-@1x.webp 1x,
+                        ./images/portfolio/img_tab8-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_tab8-@1x.jpg 1x,
+                        ./images/portfolio/img_tab8-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_mob8-@1x.webp 1x,
+                        ./images/portfolio/img_mob8-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_mob8-@1x.jpg 1x,
+                        ./images/portfolio/img_mob8-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/img_mob8-@1x.jpg"
+                      alt="Біла лейба з назвою компанії"
+                    />
+                  </picture>
                   <p class="projects-overlay"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -243,12 +634,60 @@
             <li class="projects-item">
               <a class="projects-link" href="">
                 <div class="projects-thumb">
-                  <img
-                    src="./images/portfolio-img-9.jpg"
-                    alt="Клієнт працює на ноутбуці, де відкрито додаток"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_dt9-@1x.webp 1x,
+                        ./images/portfolio/img_dt9-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img_dt9-@1x.jpg 1x,
+                        ./images/portfolio/img_dt9-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_tab9-@1x.webp 1x,
+                        ./images/portfolio/img_tab9-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img_tab9-@1x.jpg 1x,
+                        ./images/portfolio/img_tab9-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_mob9-@1x.webp 1x,
+                        ./images/portfolio/img_mob9-@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img_mob9-@1x.jpg 1x,
+                        ./images/portfolio/img_mob9-@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      src="./images/portfolio/img_mob9-@1x.jpg"
+                      alt="Клієнт працює на ноутбуці, де відкрито додаток"
+                    />
+                  </picture>
                   <p class="projects-overlay"
                     >Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
