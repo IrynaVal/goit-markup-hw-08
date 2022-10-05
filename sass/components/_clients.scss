@@ -4,49 +4,49 @@
 
 .clients-list {
   display: flex;
-
   flex-wrap: wrap;
   gap: 30px;
-}
-.clients-list__item {
-  flex-basis: calc((100% - 30px) / 2);
 
-  @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 30px * 2) / 3);
+  &__item {
+    flex-basis: calc((100% - 30px) / 2);
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px * 2) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 30px * 5) / 6);
+    }
+  }
+  &__link {
+    display: flex;
+    max-width: 210px;
+    height: 92px;
+
+    border: 1px solid var(--icons-color);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    color: var(--icons-color);
+
+    transition: color var(--transition), border-color var(--transition);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
   }
 
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 30px * 5) / 6);
+  &__icon {
+    fill: currentColor;
   }
-}
-.clients-list__link {
-  display: flex;
-  width: 210px;
-  height: 92px;
-
-  border: 1px solid var(--icons-color);
-  border-radius: 4px;
-  justify-content: center;
-  align-items: center;
-  color: var(--icons-color);
-
-  transition: color var(--transition), border-color var(--transition);
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 226px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 170px;
-  }
-}
-
-.clients-list__icon {
-  fill: currentColor;
 }

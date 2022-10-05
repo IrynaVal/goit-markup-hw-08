@@ -4,6 +4,8 @@ body {
   font-family: var(--main-font-family);
   font-size: 14px;
   letter-spacing: 0.03em;
+
+  padding-top: 60px;
 }
 
 img {
@@ -17,6 +19,7 @@ button {
   border: none;
   border-radius: 4px;
 }
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;

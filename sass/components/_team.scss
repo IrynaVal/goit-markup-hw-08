@@ -22,24 +22,24 @@
     }
   }
 }
-.team__data {
+.team-thumb {
   padding-top: 30px;
   padding-left: 10px;
   padding-right: 10px;
-}
 
-.team__member {
-  margin-bottom: 10px;
+  &__member {
+    margin-bottom: 10px;
 
-  color: var(--secondary-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(19 / 16);
-  text-align: center;
-}
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+  }
 
-.team__text {
-  font-size: 16px;
-  line-height: calc(19 / 16);
-  text-align: center;
+  &__text {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+  }
 }
