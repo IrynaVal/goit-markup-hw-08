@@ -423,11 +423,6 @@ p {
 .mobile-socials__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
-@media screen and (max-width: 479px) {
-  .mobile-socials__item:not(:last-child) {
-    border-right: 0;
-  }
-}
 .mobile-socials__link {
   font-weight: 500;
   font-size: 18px;
@@ -872,7 +867,7 @@ textarea::placeholder {
   text-transform: uppercase;
   font-size: 14px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.5px) {
   .feature-item__name {
     text-align: center;
   }
@@ -1216,7 +1211,7 @@ textarea::placeholder {
   display: flex;
   gap: 8px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767.5px) {
   .filter-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1304,7 +1299,7 @@ textarea::placeholder {
         flex-basis: calc((100% - 60px) / 3);
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.5px) {
   .projects-item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1353,8 +1348,8 @@ textarea::placeholder {
   background-color: rgba(33, 150, 243, 0.9);
   font-size: 18px;
   line-height: 1.5555555556;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   -webkit-transition: -webkit-transform var(--transition);
   transition: -webkit-transform var(--transition);
   transition: transform var(--transition);
@@ -1364,7 +1359,7 @@ textarea::placeholder {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 479.5px) {
   .projects-thumb__overlay {
     font-size: 16px;
     line-height: 1.5;
