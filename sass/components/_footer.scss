@@ -7,7 +7,9 @@
   }
 
   &-container {
-    text-align: center;
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
 
     @media screen and (min-width: 1200px) {
       display: flex;
@@ -19,7 +21,7 @@
 @media screen and (min-width: 768px) {
   .footer-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
 
     @media screen and (min-width: 1200px) {
@@ -29,9 +31,11 @@
 }
 
 .address {
-  margin-bottom: 60px;
-
   font-style: inherit;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 
   &__item:not(:last-child) {
     margin-bottom: 8px;
@@ -65,7 +69,9 @@
 }
 
 .join-wrapper {
-  margin-bottom: 60px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 }
 
 .wrapper-title {

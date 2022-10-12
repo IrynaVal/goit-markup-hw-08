@@ -6,6 +6,10 @@ body {
   letter-spacing: 0.03em;
 
   padding-top: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+  }
 }
 
 img {

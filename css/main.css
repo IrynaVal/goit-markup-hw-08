@@ -53,6 +53,11 @@ body {
   letter-spacing: 0.03em;
   padding-top: 60px;
 }
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
+}
 
 img {
   display: block;
@@ -435,6 +440,7 @@ p {
   padding: 118px 0;
   height: 400px;
   max-width: 1600px;
+  margin: 0 auto;
   background-color: var(--accent-background-color);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1039,7 +1045,7 @@ textarea::placeholder {
 }
 @media screen and (min-width: 768px) {
   .clients-list__link {
-    width: 226px;
+    max-width: 226px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1060,8 +1066,10 @@ textarea::placeholder {
     padding: 60px 89px 60px 76px;
   }
 }
-.footer-container {
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .footer-container {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-container {
@@ -1079,8 +1087,9 @@ textarea::placeholder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -1092,8 +1101,12 @@ textarea::placeholder {
   }
 }
 .address {
-  margin-bottom: 60px;
   font-style: inherit;
+}
+@media screen and (max-width: 1199px) {
+  .address {
+    margin-bottom: 60px;
+  }
 }
 .address__item:not(:last-child) {
   margin-bottom: 8px;
@@ -1121,8 +1134,10 @@ textarea::placeholder {
   color: var(--main-background-color);
 }
 
-.join-wrapper {
-  margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .join-wrapper {
+    margin-bottom: 60px;
+  }
 }
 
 .wrapper-title {
